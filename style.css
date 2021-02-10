@@ -1,0 +1,12 @@
+body{
+ background-color: lawngreen;
+ color : lemonchiffon;
+}
+#camera{
+ border : medium groove lightblue;
+ width : 400px;
+ height : 400px;
+}
+#name, #accuracy{
+ color : lightcoral;
+}

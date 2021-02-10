@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Face Recognition Web App</title>
+  <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+  <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src = "https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+  <script src = "https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+  <link rel = "stylesheet" href = "style.css">
+ </head>
+ <body>
+  <center>
+   <h1 class = "text-success">Family Member Recognising Web App</h1>
+   <hr>
+   <p>The family members this model identifies are:-</p>
+   <b class = "text-danger">
+   Rudraksha Mathur (son)
+   <hr>
+   Jaishree Mathur (mother)
+   <hr>
+   Madhur Bhashini Mathur (grandmother)
+   <hr>
+   Nand Lal Mathur (grandfather)
+   <hr>
+  </b>
+  <br>
+  <br>
+  <div id = "camera"></div>
+  <br>
+  <div id = "result"></div>
+  <br>
+  <br>
+  <button class = "btn-info" onclick = "take_selfie()">Capture Photo</button>
+  <br>
+  <br>
+  <button class = "btn-primary" onclick = "identify_person()">Identify Family Member</button>
+  <br>
+  <br>
+  <b class = "text-warning">Family Member : </b><span id = "name"></span>
+  <br>
+  <b class = "text-warning">Accuracy : </b><span id = "accuracy"></span>  
+  </center>
+  <br>
+  <br>
+  <br>
+  <br>
+  <script src = "main.js"></script>
+ </body>
+</html>
